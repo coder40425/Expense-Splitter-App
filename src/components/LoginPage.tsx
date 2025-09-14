@@ -9,6 +9,7 @@ import { Mail, Lock, Eye, EyeOff, Moon, Sun } from 'lucide-react';
 import { toast } from 'react-toastify';
 import socket from '../socket';
 import { setAuthData } from '../utils/auth';
+import { API_ENDPOINTS } from '../config/api';
 
 interface LoginPageProps {
   isDarkMode: boolean;
@@ -29,7 +30,6 @@ export default function LoginPage({ onNavigate, isDarkMode, toggleTheme }: Login
     setLoading(true);
 
     try {
-      import { API_ENDPOINTS } from '../config/api';
       const res = await axios.post(
         `${API_ENDPOINTS.auth}/login`,
      { email, password }
