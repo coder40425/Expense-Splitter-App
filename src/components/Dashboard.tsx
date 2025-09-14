@@ -41,7 +41,7 @@ const Dashboard = () => {
     const userName = user?.name || "User";
 
     // Get API URL - fix for undefined environment variable
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+    const API_URL = import.meta.env.VITE_API_URL || "https://expense-splitter-app-6gc3.onrender.com";
 
     // Fetch groups from backend
     useEffect(() => {
