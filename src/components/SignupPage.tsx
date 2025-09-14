@@ -7,6 +7,7 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Mail, Lock, User, Eye, EyeOff, Moon, Sun } from 'lucide-react';
 import { toast } from 'react-toastify';
+import { API_ENDPOINTS } from '../config/api';
 
 interface SignupPageProps {
   isDarkMode: boolean;
@@ -31,14 +32,12 @@ export default function SignupPage({ onNavigate, isDarkMode, toggleTheme }: Sign
 
     try {
       const res = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/auth/signup`,
-        {
-          name: formData.name,
-          email: formData.email,
-          password: formData.password,
-        }
-      );
-
+      `${API_ENDPOINTS.auth}/signup`,
+      { name: formData.name,
+        email: formData.email,
+        password: formData.password,
+  }
+);
       // Show success notification with better styling
       toast.success(`🎉 Account created successfully! Welcome ${formData.name}!`, {
         position: "top-center",
