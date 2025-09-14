@@ -29,14 +29,13 @@ const connectDB = async () => {
   }
 };
 connectDB();
-// -------------------------------------
 
 // CORS Configuration for Production
 const corsOptions = {
   origin: [
     'http://localhost:3000',
     'http://localhost:5173', // Vite dev server
-    'https://expense-splitter.vercel.app', // Replace with your actual Vercel URL
+    'https://expense-splitter-app-ys.vercel.app',
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -53,7 +52,7 @@ const io = new Server(server, {
     origin: [
       "http://localhost:3000",
       "http://localhost:5173",
-      "https://expense-splitter.vercel.app"
+      "https://expense-splitter-app-ys.vercel.app",
     ],
     methods: ["GET", "POST"]
   }
