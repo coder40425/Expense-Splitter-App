@@ -69,7 +69,8 @@ const GroupDetails: React.FC = () => {
   const currentUser = getAuthUser();
   const currentUserId = currentUser?._id;
 
-  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+  // FIXED: Use production URL for deployed app
+  const API_URL = import.meta.env.VITE_API_URL || "https://expense-splitter-app-6gc3.onrender.com";
 
   // ---- STATE ----
   const [group, setGroup] = useState<Group | null>(null);
