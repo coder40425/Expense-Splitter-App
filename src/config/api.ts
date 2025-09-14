@@ -3,7 +3,7 @@
 // Use your VITE_API_URL from .env
 const API_BASE_URL = import.meta.env.MODE === "production"
   ? import.meta.env.VITE_API_URL   // from .env.production
-  : "http://localhost:5000";       // dev fallback
+  : 'https://expense-splitter-app-6gc3.onrender.com'; //live backend URL
 
 export const API_ENDPOINTS = {
   auth: `${API_BASE_URL}/api/auth`,
