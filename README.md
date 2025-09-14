@@ -75,29 +75,38 @@ Split expenses with friends, track balances, chat inside groups, and get realtim
 
 ---
 
-## 🚀 Getting Started  
-
-### Clone the repo  
-```bash
-git clone https://github.com/coder40425/Expense-Splitter-App.git
-cd Expense-Splitter-App
-
-#Backend#
-cd server
-npm install
-# Add .env with:
-# MONGO_URI=your_mongo_atlas_uri
-# JWT_SECRET=your_secret_key
-npm run dev
-
-#Frontend#
-cd client
-npm install
-npm start
-
----       ```
-
 ##License
 
 This project is licensed under the MIT License — see the LICENSE file for details
 
+## 👤 Author  
+
+*Yash Kumar Singh*  
+
+- GitHub: [coder40425](https://github.com/coder40425)  
+- LinkedIn: [Yash Kumar Singh](https://www.linkedin.com/in/yash-kumar-singh-18843232a)
+
+### Clone the repo  
+
+```bash
+# Clone the repository
+git clone https://github.com/coder40425/Expense-Splitter-App.git
+cd Expense-Splitter-App   
+
+# --- Backend Setup ---
+cd server
+npm install
+
+# Add a .env file with the following:
+# MONGO_URI=your_mongo_atlas_uri
+# JWT_SECRET=your_secret_key
+
+npm run dev
+
+# --- Frontend Setup ---
+cd ../client
+npm install
+npm start
+
+
+---      
