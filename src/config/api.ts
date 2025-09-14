@@ -1,4 +1,4 @@
-// src/utils/api.ts
+// src/config/api.ts
 
 // Use your VITE_API_URL from .env
 const API_BASE_URL = import.meta.env.MODE === "production"
