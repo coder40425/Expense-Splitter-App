@@ -29,10 +29,11 @@ export default function LoginPage({ onNavigate, isDarkMode, toggleTheme }: Login
     setLoading(true);
 
     try {
+      import { API_ENDPOINTS } from '../config/api';
       const res = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/auth/login`,
-        { email, password }
-      );
+        `${API_ENDPOINTS.auth}/login`,
+     { email, password }
+);
 
       // Store auth data in localStorage via your utility
       setAuthData(res.data.user, res.data.token);
