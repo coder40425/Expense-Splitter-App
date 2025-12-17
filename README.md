@@ -84,7 +84,7 @@ This project is licensed under the MIT License — see the LICENSE file for deta
 *Yash Kumar Singh*  
 
 - GitHub: [coder40425](https://github.com/coder40425)  
-- LinkedIn: [Yash Kumar Singh](https://www.linkedin.com/in/yash-kumar-singh-18843232a)
+- LinkedIn: [Yash Kumar Singh](https://www.linkedin.com/in/yash-kumar-singh-dev)
 
 ### Clone the repo  
 
